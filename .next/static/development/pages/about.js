@@ -99,9 +99,7 @@ var Layout = function Layout(props) {
       lineNumber: 12
     },
     __self: this
-  }),
-  /*props.children*/
-  props.content);
+  }), props.children);
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (Layout); // ver. 2

@@ -1,44 +1,23 @@
-// Link API
+import Layout from '../components/MyLayout';
 import Link from 'next/link';
 
-// Components
-import Header from '../components/Header';
-import withLayout from '../components/MyLayout';
-import Layout from '../components/MyLayout';
+const PostLink = props => (
+    <li>
+        <Link href={`/post?title=${props.title}`}>
+            <a>{props.title}</a>
+        </Link>
+    </li>
+);
 
-const indexPageContent = <p>hello next.js</p>
-export default function Index() {
-    return <Layout content={indexPageContent} />;
-}
-
-/*
-const Page = () => <p>Hello Next.js</p>
-export default withLayout(Page);
-*/
-
-/*
-export default function Index() {
+export default function Blog() {
     return (
         <Layout>
-            <p>
-                Hello Next.js
-            </p>
+            <h1>My Blog</h1>
+            <ul>
+                <PostLink title="hello Next.js" />
+                <PostLink title="learn Next.js" />
+                <PostLink title="deploy apps with Zeit" />
+            </ul>
         </Layout>
     )
 }
-*/
-/*
-const Index = () => (
-    <div>
-        <Link href="/about">
-            
-            <a title="About Page">About Page</a>
-        </Link>
-        <Header />
-        <p>Hello Next.js</p>
-    </div>
-);
-*/
-
-/* make constant Index accessible from other files */
-//export default Index;

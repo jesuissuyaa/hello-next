@@ -189,9 +189,7 @@ const Layout = props => __jsx("div", {
     lineNumber: 12
   },
   __self: undefined
-}),
-/*props.children*/
-props.content);
+}), props.children);
 
 /* harmony default export */ __webpack_exports__["default"] = (Layout); // ver. 2
 

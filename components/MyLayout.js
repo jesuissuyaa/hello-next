@@ -10,9 +10,7 @@ const layoutStyle = {
 const Layout = props => (
     <div style={layoutStyle}>
         <Header />
-        {/*props.children*/
-            props.content
-        }
+        {props.children}
     </div>
 );
 
